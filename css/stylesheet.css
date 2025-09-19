@@ -1,0 +1,19 @@
+
+  /* Centered text box */
+.text_box {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.034);
+    border-style: groove;
+}
+
+ /* If 500px is too small */
+#bigger-box {
+    max-width: 800px;
+}
+
+/* Text font-size 30 */
+.text_30 {
+    font-size: 30px;
+}
