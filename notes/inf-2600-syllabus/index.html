@@ -11,62 +11,103 @@
 
 <body>
     <header>
-        <h4 style="text-align: center; font-size: 50px;">INF-2600 Exam Prep</h4> <!-- Centered Header -->
+        <h1 style="text-align: center; font-size: 50px;">INF-2600 Exam Prep</h1> <!-- Centered Header -->
     </header>
 
     <main>
-        <section>
-                <h4>
-                    Search Algorithms:
-                </h4>
-                <ul>
-                    <li><h5>Depth First Search (DFS):</h5>
-                        <paragraph>
-                            Depth first search is a very simple uninformed graph-traversal algorithm. 
-                            With DFS we start at the root or “start” position and traverse one path completely before backtracking
-                             and exploring other paths.
-                        </paragraph>
+        <article>
 
-                        <paragraph>
-                            A common example of DFS is the Sudoku brute-force algorithm. 
-                            It will pick one number for a square, and explore deep, 
-                            until it is no longer possible to choose a valid value, then we backtrack. 
-                        </paragraph>
+            <div class="section" id="search-algorithms">
+                <h2>
+                    <u>Search Algorithms:</u>
+                </h2>
+                
+                <div class="sub-section" id="informed-vs-uninformed search">
+                    <h3>Informed vs. Uninformed Search:</h3>
+                    <p>
+                        Informed search uses additional information about the problem to more effectively search for a solution. 
+                        This additional information can be used to estimate how good certain paths are compared to others, 
+                        which generally results in more effective search.
+                    </p>
 
-                        <paragraph>
-                            DFS does not work well for finding the shortest path.
-                        </paragraph>
-                    </li>
+                    <p>
+                        Uninformed search uses no additional information other than the problem specification.
+                        This is generally slower and less effective than informed search.
+                    </p>
+                </div>
+            
+                <div class="sub-section" id="heuristic">
+                    <h3>What is a heuristic?</h3>
+                    <p>
+                        ...
+                    </p>
+                </div>
+                
+                <div class="sub-section" id="dfs">
+                    <h3>Depth First Search (DFS):</h3>
+                    <p>
+                        Depth first search is a very simple uninformed graph-traversal algorithm. 
+                        With DFS we start at the root or “start” position and traverse one path completely before backtracking
+                            and exploring other paths.
+                    </p>
 
-                    <li><h5>Breadth First Search (BFS):</h5>
-                        <paragraph>
-                            Breath first search is somewhat similar to DFS, 
-                            the difference is that BFS searches the level completely before moving on, 
-                            while DFS searches a path completely before moving on. 
-                            BFS is also uninformed.
-                        </paragraph>
+                    <p>
+                        A common example of DFS is the Sudoku brute-force algorithm. 
+                        It will pick one number for a square, and explore deep, 
+                        until it is no longer possible to choose a valid value, then we backtrack. 
+                    </p>
 
-                        <paragraph>
-                            BFS may be used to find the shortest path in a graph or tree structure.
-                        </paragraph>
-                    </li>
+                    <p>
+                        DFS does not work well for finding the shortest path.
+                    </p>
+                </div>
+                
+                <div class="sub-section" id="bfs">
+                    <h3>Breadth First Search (BFS):</h3>
+                    <p>
+                        Breath first search is somewhat similar to DFS, 
+                        the difference is that BFS searches the level completely before moving on, 
+                        while DFS searches a path completely before moving on. 
+                        BFS is also uninformed.
+                    </p>
 
-                    <li><h5>A-star (A*)</h5>
-                        <paragraph>
-                            A* is by far the most effective search algorithm we have explored in this course. 
-                            One of the reasons for this, is that A* is an informed search algorithm. 
-                            This means that the algorithm uses heuristics to create a priority-queue for nodes it should explore.
-                        </paragraph>
+                    <p>
+                        BFS may be used to find the shortest path in a graph or tree structure.
+                    </p>
+                </div>
 
-                        <paragraph>
-                            A heuristic is an estimated value that helps the algorithm effectively choose what nodes to explore next. 
-                            A heuristic is admissible as long as it does NOT overestimate, that will break the algorithm.
-                        </paragraph>
-                    </li>
-                </ul>
+                <div class="sub-section" id="greedy-search">
+                    <h3>Greedy Search:</h3>
+                    <p>
+                        ...
+                    </p>
+                </div>
 
-        </section>
+                <div class="sub-section" id="a-star">
+                    <h3>A-star (A*)</h3>
+                    <p>
+                        A* is by far the most effective search algorithm we have explored in this course. 
+                        One of the reasons for this, is that A* is an informed search algorithm. 
+                        This means that the algorithm uses heuristics to create a priority-queue for nodes it should explore.
+                    </p>
+
+                    <p>
+                        A heuristic is an estimated value that helps the algorithm effectively choose what nodes to explore next. 
+                        A heuristic is admissible as long as it does NOT overestimate, that will break the algorithm.
+                    </p>
+                </div>
+            </div>
+
+        </article>
     </main>
+
+    <footer style="display:flex; justify-content:center;">
+        <ul>
+            <!-- <li style="display:inline; padding:10px;"><a href="https://gunnarsson.tech/contact_info/">Contact Information</a></li> -->
+            <li style="display:inline; padding:10px;">&copy; 2025 Gunnarsson.tech. All rights reserved.</li>
+            <li style="display:inline; padding:10px;"><a href="https://gunnarsson.tech/">Home</a></li>
+        </ul>
+    </footer>
 
 </body>
 
