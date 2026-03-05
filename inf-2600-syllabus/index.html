@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> INF-2600 </title> <!-- Tab title -->
+
+    <link rel="stylesheet" href="css/stylesheet.css"> <!-- Link the stylesheet -->
+</head>
+
+<body>
+    <header>
+        <h4 style="text-align: center; font-size: 50px;">INF-2600 Exam Prep</h4> <!-- Centered Header -->
+    </header>
+
+    <main>
+        <section>
+                <h4>
+                    Search Algorithms:
+                </h4>
+                <ul>
+                    <li><h5>Depth First Search (DFS):</h5>
+                        <paragraph>
+                            Depth first search is a very simple uninformed graph-traversal algorithm. 
+                            With DFS we start at the root or “start” position and traverse one path completely before backtracking
+                             and exploring other paths.
+                        </paragraph>
+
+                        <paragraph>
+                            A common example of DFS is the Sudoku brute-force algorithm. 
+                            It will pick one number for a square, and explore deep, 
+                            until it is no longer possible to choose a valid value, then we backtrack. 
+                        </paragraph>
+
+                        <paragraph>
+                            DFS does not work well for finding the shortest path.
+                        </paragraph>
+                    </li>
+
+                    <li><h5>Breadth First Search (BFS):</h5>
+                        <paragraph>
+                            Breath first search is somewhat similar to DFS, 
+                            the difference is that BFS searches the level completely before moving on, 
+                            while DFS searches a path completely before moving on. 
+                            BFS is also uninformed.
+                        </paragraph>
+
+                        <paragraph>
+                            BFS may be used to find the shortest path in a graph or tree structure.
+                        </paragraph>
+                    </li>
+
+                    <li><h5>A-star (A*)</h5>
+                        <paragraph>
+                            A* is by far the most effective search algorithm we have explored in this course. 
+                            One of the reasons for this, is that A* is an informed search algorithm. 
+                            This means that the algorithm uses heuristics to create a priority-queue for nodes it should explore.
+                        </paragraph>
+
+                        <paragraph>
+                            A heuristic is an estimated value that helps the algorithm effectively choose what nodes to explore next. 
+                            A heuristic is admissible as long as it does NOT overestimate, that will break the algorithm.
+                        </paragraph>
+                    </li>
+                </ul>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
